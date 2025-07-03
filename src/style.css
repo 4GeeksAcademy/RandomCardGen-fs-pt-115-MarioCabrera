@@ -1,5 +1,13 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    background: gray;
+    font-family: 'Coup de Poker', sans-serif;
+
+}
+start-25{
+    left: 25% !important;
+}
+.z-1 > *{
+    font-family: Arial, Helvetica, sans-serif;
 }

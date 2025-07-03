@@ -1,35 +1,70 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/coup-de-poker" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container position-absolute top-0 start-25">
+    <div class="card col-md-2 hearts my-4 mx-auto border border-1 text-danger rounded-4 d-none">
+      <div class="card-header border border-0 display-1 py-0"> ♥ </div>
+      <div class="card-body text-dark text-center bg-light">
+        <h1 class="display-1 fw-bold number">5</h1>
       </div>
+      <div class="card-footer border border-0 display-1 py-0 text-end"> ♥ </div>
     </div>
+    <div class="card col-md-2 spades my-4 mx-auto border border-1 text-dark rounded-4 d-none">
+      <div class="card-header border border-0 display-1 py-0"> ♠ </div>
+      <div class="card-body text-dark text-center bg-light">
+        <h1 class="display-1 fw-bold number">5</h1>
+      </div>
+      <div class="card-footer border border-0 display-1 py-0 text-end"> ♠ </div>
+    </div>
+    <div class="card col-md-2 clubs my-4 mx-auto border border-1 text-dark rounded-4 d-none">
+      <div class="card-header border border-0 display-1 py-0"> ♣ </div>
+      <div class="card-body text-dark text-center bg-light">
+        <h1 class="display-1 fw-bold number">5</h1>
+      </div>
+      <div class="card-footer border border-0 display-1 py-0 text-end"> ♣ </div>
+    </div>
+    <div class="card col-md-2 diamonds my-4 mx-auto border border-1 text-danger rounded-4 d-none">
+      <div class="card-header border border-0 display-1 py-0"> ♦ </div>
+      <div class="card-body text-dark text-center bg-light">
+        <h1 class="display-1 fw-bold number">5</h1>
+      </div>
+      <div class="card-footer border border-0 display-1 py-0 text-end"> ♦ </div>
+    </div>
+    <div class="col-md-2 m-auto d-flex justify-content-center">
+      <button class="btn btn-lg bg-success rounded-3 text-center fs-2" id="start">START</button>
+    </div>
+  </div>
+  <div class="col-md-3 z-1 position-absolute p-5 rounded-3">
+    <div class="input-group">
+      <label for="ancho" class="input-group-text text-end fw-bold">Ancho</label>
+      <input type="number" class="form-control" name="ancho">
+    </div>
+    <div class="input-group">
+      <label for="alto" class="input-group-text text-end fw-bold">Alto</label>
+      <input type="number" class="form-control" name="alto">
+    </div>
+  </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
