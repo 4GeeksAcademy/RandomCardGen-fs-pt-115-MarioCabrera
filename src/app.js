@@ -57,7 +57,6 @@ window.onload = function () {
     clearTimeout(timeout);
     timedCount();
   }
-
   document.getElementById("start").addEventListener("click", (element) => {
     selectCard()
     startCount()
